@@ -1,9 +1,1 @@
-// Declarations
-var studlyCapVar;
-var properCamelCase;
-var titleCaseOver;
-
-// Assignments
-studlyCapVar = 10;
-properCamelCase = "A String";
-titleCaseOver = 9000;
+var sum = 10 + 10;
