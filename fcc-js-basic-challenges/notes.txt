@@ -1,0 +1,89 @@
+**comments:
+//single line
+/*multiline
+comments*/
+
+**7 Data types- anything thats meaningful to the computer. All 7 data types can be stored in a variable :
+undefined, null, boolean, string, symbol, number, object
+
+**variables- allow computers to store and manipulate data dynamically, they do this by using a label to point to the data rather than using the data itself. To declare(create) a variable use the "var" keyword: 
+var
+
+**assignment operator- to store a value in a variable you use the assignment(=) operator. Assignment goes from right to left, which means everything  to the right of the operator is resolved before the value is assigned to the variable to the left of the operator:
+=
+
+**uninitialized variable- When JavaScript variables are declared they have an initial value of undefined.If you do a math operation on an undefined variable the result will return "NaN".Concatenated strings with undefined variables returna literal string of ""undefined.:
+var  myVar; //has a value of undefined
+
+*Case sensitivity:
+Hello != hello;
+
+**Number data type is used to represent numeric data such as adding, subtracting, multiplying, and dividing.
+myVar = 1+1;
+myVar = 2-1;
+myVar = 2*5;
+myVar = 10/2;
+
+**increment(++) operator is used to add one to a variable:
+i++; means i= i+1;
+
+**decrement(--) operator is used to decrease one from a variable:
+i--; means i=i-1;
+
+**create decimal numbers(ie "floating point" numbers or "floats") can be stored in variables as well:
+var myDecimal = 5.7;
+
+*multiplying decimals(floats):
+var prodiuct= 5.2 * 3.2;
+
+*divide one decimal by another:
+var quotient = 12.5 / 2.5;
+
+**remainder(%) operator - gives the ramainder of the division of two numbers:
+var remainder = 5 %  2;
+
+**compound assignment: 
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+
+
+
+
+
+
+
+
+
