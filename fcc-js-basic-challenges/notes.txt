@@ -62,11 +62,15 @@ console.log(threeArr); //Returns [1, 4]
 
 ***Functions for the beginning of Arrays***
 
-**
+**shift() - the .shift() function removes the first item from the array. You can assign the "shifted off" value to an array. - works just like pop but instead of the end it works for the beginning of the array
 
-**
+**unshift() - .unshift() it's used to append data to the beginning of an array -  takes one or more parameters and "pushes" them onto the beginning of the array - works just like .push() except instead of adding the element at the end of an array unshift() adds the element at the beginning of the array
 
-**
+**functions - in javascript we can divide our code into reusable parts called functions - You can call or "invoke" your function by using it;s name followed by parentheses
+function functionName() {
+console.log("Hello World");
+}
+functionName(); //each time this function is called it will print out the message "Hello World" on the dev console. All the code between the curley braces will be executed every time the function is called
 
 **
 
