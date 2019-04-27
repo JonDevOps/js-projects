@@ -42,10 +42,12 @@ var quotient = 12.5 / 2.5;
 **remainder(%) operator - gives the ramainder of the division of two numbers:
 var remainder = 5 %  2;
 
-**compound assignment: 
-
-
-
+**compound assignment operators: 
+addition: myVar += 5; is the same as myVar = myVar + 5;
+subtraction: myVar -= 5; is the same as myVar = myVar - 5;
+multiplication: myVar *= 5; is the same as myVar = myVar * 5;
+division: myVar /= 5; is the same as myVar = myVar / 5;
+remainder: myVar %= 5; is the same as myVar = myVar % 5
 
 
 ***Functions for the end of arrays***
@@ -70,23 +72,32 @@ console.log(threeArr); //Returns [1, 4]
 function functionName() {
 console.log("Hello World");
 }
-functionName(); //each time this function is called it will print out the message "Hello World" on the dev console. All the code between the curley braces will be executed every time the function is called
+functionName(); //each time this function is called it will print out the message "Hello World" on the dev console. All the code between the curley braces will be executed every time the function is called - dont forget to put the () after the function name when calling it.
+
+**Parameters - variables that act as placeholders for the values that are to be input  to a function when it is called. Funcitons are normally defined along with one or more parameters.
+function testFun(param1, param2) {
+console.log(param1, param2); //within the () you can use operators on the parameters to make them output different results to the dev console. Example: console.log(param1 + param2)
+}
+
+**Arguments - the actual values that are input (or "passed") into a function when it is called.
+testFun("Hello", "World"); //We have passed  two arguments, "Hello" and "World". Inside the function, the first param1 will equal "Hello" and param2 will equal "World". - Note that you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
 
 **
 
 **
 
-**
 
-**
+Comparison Operators - are used in logical statements to determine equality or difference between variables or values
 
-**
+**equal to(==)
 
-**
+**equal value and equal type(===)
 
-**
+**not equal(!=)
 
-**
+**not equal value or not equal type(!==)
+
+
 
 **
 
