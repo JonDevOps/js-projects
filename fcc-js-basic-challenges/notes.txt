@@ -44,9 +44,23 @@ var remainder = 5 %  2;
 
 **compound assignment: 
 
-**
 
-**
+
+
+
+***Functions for the end of arrays***
+
+**push() function - it's used to append data to the end of an array - .push takes one or more parameters and "pushes" them onto the end of the array
+var arr = [1, 2, 3];
+arr.push(4); //arr is now [1, 2, 3, 4]
+
+**pop() function - pop() is used to "pop" the value of the end of an array. We can store this "popped off" value by assigning it to a variable - in other words, .pop() removes the last element from an array and returns the element.
+var threeArr = [1, 4, 6];
+var OneDown = threeArr.pop();
+console.log(oneDown); //returns 6
+console.log(threeArr); //Returns [1, 4]
+
+***Functions for the beginning of Arrays***
 
 **
 
