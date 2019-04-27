@@ -50,6 +50,55 @@ division: myVar /= 5; is the same as myVar = myVar / 5;
 remainder: myVar %= 5; is the same as myVar = myVar % 5
 
 
+**escaping string literals - use the backslash to escape literal quotes inside you strings, for example(var sampleStr = "Alan said, \"Peter is learning JavaScript\".";)
+
+**escape sequences in strings: S2 reasons to use escaping characters are 1st so you can use characters youcant't type out like backspace, 2nd is so you can represent multiple quotes in a string without JS misinterpreting what you mean.
+single quote: \'
+double quote: \"
+backslash: \\
+newline: \n
+cariage return: \r
+tab: \t
+backspace: \b
+form feed: \f
+
+**find length of a string - to find the length of  a string value , write .length after the string variable or string literal
+"Alan Peter".length; //10
+or var firstName = "Charles";
+firstName.length;
+
+**use bracket notation to find the first character in a string - bracket notation is a way to get a character at a specific index within a string
+var firstName = "Charles";
+firstName[0];
+
+**string immutability - in javaScript string values are immutable, which means they cannot be altered once created
+incorrect: 
+var myStr = "Bob";
+myStr[0] = "J"; //this will NOT change Bob to Job.
+
+correct:
+var myStr = "Bob";
+myStr = "Job";
+
+**array entry mutability - unlike strings, the entries of array are mutable and can be changed freely
+var ourArray = [50,40,30];
+ourArray[0] = 15; // equals [15,40,30]
+
+**use bracket notation to find the nth character in a string
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1]; // if you call the secondLetterOfFirstName variable d will return
+
+**use bracket notation to find the last character in a string
+
+
+**use bracket notation to find the nth-to-last character in a string
+
+
+**arrays - With JavaScript array variables, we can store several pieces of data in one place.
+var sandwhich = ["peanut butter", "jelly", "bread"];
+
+
+
 ***Functions for the end of arrays***
 
 **push() function - it's used to append data to the end of an array - .push takes one or more parameters and "pushes" them onto the end of the array
@@ -82,7 +131,9 @@ console.log(param1, param2); //within the () you can use operators on the parame
 **Arguments - the actual values that are input (or "passed") into a function when it is called.
 testFun("Hello", "World"); //We have passed  two arguments, "Hello" and "World". Inside the function, the first param1 will equal "Hello" and param2 will equal "World". - Note that you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
 
-**
+
+
+**scope- the vi
 
 **
 
