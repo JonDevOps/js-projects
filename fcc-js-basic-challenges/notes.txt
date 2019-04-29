@@ -1,48 +1,48 @@
-**comments:
+** comments:
 //single line
 /*multiline
 comments*/
 
-**7 Data types- anything thats meaningful to the computer. All 7 data types can be stored in a variable :
+** 7 Data types- anything thats meaningful to the computer. All 7 data types can be stored in a variable :
 undefined, null, boolean, string, symbol, number, object
 
-**variables- allow computers to store and manipulate data dynamically, they do this by using a label to point to the data rather than using the data itself. To declare(create) a variable use the "var" keyword: 
+** variables- allow computers to store and manipulate data dynamically, they do this by using a label to point to the data rather than using the data itself. To declare(create) a variable use the "var" keyword: 
 var
 
-**assignment operator- to store a value in a variable you use the assignment(=) operator. Assignment goes from right to left, which means everything  to the right of the operator is resolved before the value is assigned to the variable to the left of the operator:
+** assignment operator- to store a value in a variable you use the assignment( = ) operator. Assignment goes from right to left, which means everything  to the right of the operator is resolved before the value is assigned to the variable to the left of the operator:
 =
 
-**uninitialized variable- When JavaScript variables are declared they have an initial value of undefined.If you do a math operation on an undefined variable the result will return "NaN".Concatenated strings with undefined variables returna literal string of ""undefined.:
+** uninitialized variable- When JavaScript variables are declared they have an initial value of undefined.If you do a math operation on an undefined variable the result will return " NaN ".Concatenated strings with undefined variables returna literal string of ""undefined.:
 var  myVar; //has a value of undefined
 
-*Case sensitivity:
+* Case sensitivity:
 Hello != hello;
 
-**Number data type is used to represent numeric data such as adding, subtracting, multiplying, and dividing.
+** Number data type is used to represent numeric data such as adding, subtracting, multiplying, and dividing.
 myVar = 1+1;
 myVar = 2-1;
 myVar = 2*5;
 myVar = 10/2;
 
-**increment(++) operator is used to add one to a variable:
+** increment( ++ ) operator is used to add one to a variable:
 i++; means i= i+1;
 
-**decrement(--) operator is used to decrease one from a variable:
+** decrement( -- ) operator is used to decrease one from a variable:
 i--; means i=i-1;
 
-**create decimal numbers(ie "floating point" numbers or "floats") can be stored in variables as well:
+** create decimal numbers(ie "floating point" numbers or "floats") can be stored in variables as well:
 var myDecimal = 5.7;
 
-*multiplying decimals(floats):
+* multiplying decimals(floats):
 var prodiuct= 5.2 * 3.2;
 
-*divide one decimal by another:
+* divide one decimal by another:
 var quotient = 12.5 / 2.5;
 
-**remainder(%) operator - gives the ramainder of the division of two numbers:
+** remainder( % ) operator - gives the ramainder of the division of two numbers:
 var remainder = 5 %  2;
 
-**compound assignment operators: 
+** compound assignment operators: 
 addition: myVar += 5; is the same as myVar = myVar + 5;
 subtraction: myVar -= 5; is the same as myVar = myVar - 5;
 multiplication: myVar *= 5; is the same as myVar = myVar * 5;
@@ -50,9 +50,9 @@ division: myVar /= 5; is the same as myVar = myVar / 5;
 remainder: myVar %= 5; is the same as myVar = myVar % 5
 
 
-**escaping string literals - use the backslash to escape literal quotes inside you strings, for example(var sampleStr = "Alan said, \"Peter is learning JavaScript\".";)
+** escaping string literals - use the backslash to escape literal quotes inside you strings, for example(var sampleStr = "Alan said, \"Peter is learning JavaScript\".";)
 
-**escape sequences in strings: S2 reasons to use escaping characters are 1st so you can use characters youcant't type out like backspace, 2nd is so you can represent multiple quotes in a string without JS misinterpreting what you mean.
+** escape sequences in strings: S2 reasons to use escaping characters are 1st so you can use characters youcant't type out like backspace, 2nd is so you can represent multiple quotes in a string without JS misinterpreting what you mean.
 single quote: \'
 double quote: \"
 backslash: \\
@@ -62,16 +62,16 @@ tab: \t
 backspace: \b
 form feed: \f
 
-**find length of a string - to find the length of  a string value , write .length after the string variable or string literal
+** find length of a string - to find the length of  a string value , write .length after the string variable or string literal
 "Alan Peter".length; //10
 or var firstName = "Charles";
 firstName.length;
 
-**use bracket notation to find the first character in a string - bracket notation is a way to get a character at a specific index within a string
+** use bracket notation to find the first character in a string - bracket notation is a way to get a character at a specific index within a string
 var firstName = "Charles";
 firstName[0];
 
-**string immutability - in javaScript string values are immutable, which means they cannot be altered once created
+** string immutability - in javaScript string values are immutable, which means they cannot be altered once created
 incorrect: 
 var myStr = "Bob";
 myStr[0] = "J"; //this will NOT change Bob to Job.
@@ -80,73 +80,90 @@ correct:
 var myStr = "Bob";
 myStr = "Job";
 
-**array entry mutability - unlike strings, the entries of array are mutable and can be changed freely
+** array entry mutability - unlike strings, the entries of array are mutable and can be changed freely
 var ourArray = [50,40,30];
 ourArray[0] = 15; // equals [15,40,30]
 
-**use bracket notation to find the nth character in a string
+** use bracket notation to find the nth character in a string
 var firstName = "Ada";
 var secondLetterOfFirstName = firstName[1]; // if you call the secondLetterOfFirstName variable d will return
 
-**use bracket notation to find the last character in a string
+** use bracket notation to find the last character in a string - to get the last letter of a string, you can subtract one from the string's length.
+var firstName = "Charles";
+firstName[firstName.length - 1]
+
+** use bracket notation to find the nth-to-last character in a string - below is an example to get the 3rd to last letter of the below string
+var firstName = "Charles";
+firstName[firstName.length - 3];
 
 
-**use bracket notation to find the nth-to-last character in a string
-
-
-**arrays - With JavaScript array variables, we can store several pieces of data in one place.
+** arrays - With JavaScript array variables, we can store several pieces of data in one place.
 var sandwhich = ["peanut butter", "jelly", "bread"];
 
 
+*** Functions for the end of arrays ***
 
-***Functions for the end of arrays***
-
-**push() function - it's used to append data to the end of an array - .push takes one or more parameters and "pushes" them onto the end of the array
+** push() function - it's used to append data to the end of an array - .push takes one or more parameters and "pushes" them onto the end of the array
 var arr = [1, 2, 3];
 arr.push(4); //arr is now [1, 2, 3, 4]
 
-**pop() function - pop() is used to "pop" the value of the end of an array. We can store this "popped off" value by assigning it to a variable - in other words, .pop() removes the last element from an array and returns the element.
+** pop() function - pop() is used to "pop" the value of the end of an array. We can store this "popped off" value by assigning it to a variable - in other words, .pop() removes the last element from an array and returns the element.
 var threeArr = [1, 4, 6];
 var OneDown = threeArr.pop();
 console.log(oneDown); //returns 6
 console.log(threeArr); //Returns [1, 4]
 
-***Functions for the beginning of Arrays***
+*** Functions for the beginning of Arrays ***
 
-**shift() - the .shift() function removes the first item from the array. You can assign the "shifted off" value to an array. - works just like pop but instead of the end it works for the beginning of the array
+** shift() - the .shift() function removes the first item from the array. You can assign the "shifted off" value to an array. - works just like pop but instead of the end it works for the beginning of the array
 
-**unshift() - .unshift() it's used to append data to the beginning of an array -  takes one or more parameters and "pushes" them onto the beginning of the array - works just like .push() except instead of adding the element at the end of an array unshift() adds the element at the beginning of the array
+** unshift() - .unshift() it's used to append data to the beginning of an array -  takes one or more parameters and "pushes" them onto the beginning of the array - works just like .push() except instead of adding the element at the end of an array unshift() adds the element at the beginning of the array
 
-**functions - in javascript we can divide our code into reusable parts called functions - You can call or "invoke" your function by using it;s name followed by parentheses
+** functions - in javascript we can divide our code into reusable parts called functions - You can call or "invoke" your function by using it;s name followed by parentheses
 function functionName() {
 console.log("Hello World");
 }
 functionName(); //each time this function is called it will print out the message "Hello World" on the dev console. All the code between the curley braces will be executed every time the function is called - dont forget to put the () after the function name when calling it.
 
-**Parameters - variables that act as placeholders for the values that are to be input  to a function when it is called. Funcitons are normally defined along with one or more parameters.
+** Parameters - variables that act as placeholders for the values that are to be input  to a function when it is called. Funcitons are normally defined along with one or more parameters.
 function testFun(param1, param2) {
 console.log(param1, param2); //within the () you can use operators on the parameters to make them output different results to the dev console. Example: console.log(param1 + param2)
 }
 
-**Arguments - the actual values that are input (or "passed") into a function when it is called.
+** Arguments - the actual values that are input (or "passed") into a function when it is called.
 testFun("Hello", "World"); //We have passed  two arguments, "Hello" and "World". Inside the function, the first param1 will equal "Hello" and param2 will equal "World". - Note that you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
 
 
 
-**scope- the vi
+** global scope- refers to the visibility of variables. Variables outside of a function blocks have global scopes, this means they can be seen everywhere in the js code. Variables created without the  are keyword are automatically created in the global scope. Always use var to declare your variable to avoid unintended consequences.
 
-**
+** local scope or functional scope - Variables which are declared within a function, as well as the function parameters have local scope. That means, they are only visible within that function. - Variables which are declared within a function, as well as the function parameters have local scope. - local scope is created by functions in Javascript. Variables in the local scope are only accessible within the function in which they are defined, i.e they are bound to their respective functions each having different scopes. variabl
+
+** local vs global scope in functions - you can have both local and global variables with the same name. When you do this the local variable take precedence over the global variable
+
+** return a value from a function with return - We can pass values into a function with arguments. You can use a return statement to send a value back out of a function.
+function plusThree(num){
+return num + 3;
+}
+var answer = plusThree(5); //8
+
+** undefined value returned from a value - a function can include a return statement but it doesnt have to. if you do not have a return statement in your function, when you call it, the function will process the inner code but the returned value is undefined
+var sum = 0;
+function addSum(num){
+ sum = sum + num;
+}
+var returnedValue = addSum(3); //sum will be modified but returned value is undefined
 
 
-Comparison Operators - are used in logical statements to determine equality or difference between variables or values
+*** Comparison Operators - are used in logical statements to determine equality or difference between variables or values ***
 
-**equal to(==)
+** equal to( == )
 
-**equal value and equal type(===)
+** equal value and equal type( === )
 
-**not equal(!=)
+** not equal( != ) 
 
-**not equal value or not equal type(!==)
+** not equal value or not equal type( !== )
 
 
 
