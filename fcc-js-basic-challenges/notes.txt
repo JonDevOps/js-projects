@@ -155,19 +155,45 @@ function addSum(num){
 var returnedValue = addSum(3); //sum will be modified but returned value is undefined
 
 
+** boolean - is a data type that may only be one of two values: true or false. These are basically little on or off switches, where true is "on" and false is "off". 
+
+** if - is a statement used to make decisions in code. The keyword if tells JavaScript to execute the code in the curly braces under certain conditions, defined in the parentheses. These conditions are known as Boolean conditions and they may only be true or false. When the condition evaluates to true, the program executes the statement inside the curly braces. When the condition evaluates to false, the statement inside the curly braces will not execute.
+function test (myCondition) {
+ if (myCondition){
+   return "It was true";
+ }
+ return "It was false";
+}
+test(true); //returns "It was true"
+test(false); //returns "It was false"
+}
+
+
 *** Comparison Operators - are used in logical statements to determine equality or difference between variables or values ***
 
-** equal to( == )
+** assignment ( = )
 
-** equal value and equal type( === )
+** equal to( == ) or equality operator - compares two values and returns true is they are equivalent or false if they are not. This operator can perform type coercion. type cooercion  - in order for javascript to compare two different datatypes (for example, stings and numbers), it must convert one type to another (ie string coercion).
+1 == 1 //true
+1 == 2 //false
+1 == '1' //true
+"3" == 3 //true
 
-** not equal( != ) 
+** equal value and equal type ( === ) or strict equality operator - this is the counter part to the equality operator (==). However it does not perform the type conversion. If the values being compared have different types, they are considered unequal and the strict equality operator will return false. Hence its name strict equality.
 
-** not equal value or not equal type( !== )
+** not equal( != ) or inequality operator - the oposite of the equality operator. returns false where equality would return true and vice versa. like the equality operator, the inequality operator will convert data types of values while comparing (ie type coercion)
+1 != 2  //true
+1 != "1" //false
+1 != '1' //false
+1 != true //false
+0 !- false //false
+
+** not equal value or not equal type( !== ) or strict inequality operator - the logical opposite of the strict equality operator. it means strictly  not equal and returns false where strict equality returns true. strict inequality will not return data types
 
 
-
-**
+** typeof - in javascript you can determine the type of a variable or a value witht the typeof operator
+typeof 3 //returns 'number'
+typeof '3' //returns 'string' 
 
 **
 
